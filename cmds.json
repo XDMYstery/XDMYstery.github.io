@@ -1,4 +1,5 @@
 {
+    "man":"creatTable('>>>>>>>>>>>>CMDs>>>>>>>>>>>>>');creatTable('>Hello: Jump to %Mystery%.');creatTable('>sudo su: Login as root.');creatTable('>su guest: Login as guest.');creatTable('>bgp: Change the background picture.');creatTable('>xdmy: Change the background picture.');creatTable('>>>>>>>>>>>>CMDs>>>>>>>>>>>>>');",
     "Hello":"window.open(\"https://bbs.xdmy.club/\");creatTable('>Connecting to %Mystery%');creatTable('>Connection finish')",
     "sudo_halt":"window.opener=null;window.close();",
     "bgp":"document.getElementsByClassName('background')[0].style.backgroundImage='url(../img/bgp.png)';document.getElementsByClassName('background')[1].style.backgroundImage='url(../img/bgp.png)';",
