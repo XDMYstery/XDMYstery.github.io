@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/bo335-rwqq2.svg');
+  background-image: url('../img/xdmy.png');
   background-size: cover;
   background-position: center;
   font-family: 'Rajdhani', sans-serif;
@@ -32,7 +32,7 @@ body {
 .glass {
   height: 100%;
   width: 100%;
-  background-image: url('../img/bo335-rwqq2.svg');
+  background-image: url('../img/xdmy.png');
   background-size: cover;
   background-position: center;
   clip-path: inset(10em);
@@ -572,7 +572,7 @@ body {
         transition: 1s;
         background-size: cover;
         background-position: center;
-        background-image: url('../img/bo335-rwqq2.svg');
+        background-image: url('../img/xdmy.png');
         filter: invert(100%);
     }
     
