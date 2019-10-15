@@ -35,7 +35,7 @@ body {
   background-image: url('../img/xdmy.png');
   background-size: cover;
   background-position: center;
-  clip-path: inset(10em);
+  clip-path: inset(8em);
   filter: blur(20px);
   display: flex;
   justify-content: center;
@@ -57,10 +57,10 @@ body {
 
 .glassBoard {
   overflow: hidden;
-  top: 10em;
-  bottom: 10em;
-  left: 10em;
-  right: 10em;
+  top: 8em;
+  bottom: 8em;
+  left: 8em;
+  right: 8em;
   display: block;
   position: absolute;
 }
@@ -88,9 +88,9 @@ body {
     display: block;
     content: "";
     position: absolute;
-    top: 10em;
-    height: calc(100% - 20em);
-    width: calc(100% - 20em);
+    top: 8em;
+    height: calc(100% - 16em);
+    width: calc(100% - 16em);
     border-top: 2px solid rgba(225,225,225, 0.2);
     border-left: 1px solid rgba(225,225,225, 0.1);
     border-right: 1px solid rgba(225,225,225, 0.3);
