@@ -121,6 +121,10 @@ body {
     position: absolute;
     content: "";
   }
+
+  .content_2 {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 640px) {
@@ -286,7 +290,7 @@ body {
 
 	text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 	width: 90%;
-	background: rgba(35, 93, 134, 0.5);
+	background: rgba(56, 105, 139, 0.7);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F164564,endColorstr=#7F164564);
 	position: absolute;
 	top: 50%;
