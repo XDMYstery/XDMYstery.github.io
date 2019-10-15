@@ -16,6 +16,8 @@
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 
 <script>
+    document.addEventListener('touchmove', function(event) {event.preventDefault();}, false);
+    // ios滚屏兼容性
     $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
