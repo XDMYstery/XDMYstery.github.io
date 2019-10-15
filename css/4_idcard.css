@@ -1,0 +1,126 @@
+#fourth{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.box{
+    align-self: center;
+    min-height: 60%;
+    /* perspective: 800px; 3D效果*/
+    position: relative;
+    transform-style:preserve-3d;
+    
+}
+
+.front,.back{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    backface-visibility:hidden;
+    animation: breathe 2.7s alternate;
+	animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 2vmin;
+}
+
+.front{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 1s;
+    background: #1645647e;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F164564,endColorstr=#7F164564);
+    backface-visibility:hidden;
+
+}
+.back{
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/bo335-rwqq2.svg');
+    filter: invert(100%);
+}
+
+
+.code_pic{
+    background-size: cover;
+    background-position: center;
+    height: 30vmin;
+    width: 30vmin;
+    background-image: url('../img/codepic.jpg');
+    margin: 0;
+    padding: 0;
+}
+.intro{
+
+    padding-left: 3rem;
+    margin: 0;
+    border-left: 2px solid rgb(255, 255, 255);
+    top: 2rem;
+    bottom: 2rem;
+    width: 50vmin;
+    font-size: 800;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+hr{
+    background: white;
+    width: 10vmin;
+    position: relative;
+    margin-left: 0;
+
+}
+.intro p{
+    background: #0a2030a8;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F0a2030,endcolorstr=#7F0a2030);
+    font-weight: 500;
+}
+@media screen and (max-width: 640px){
+
+    .front{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 80%;
+        left: 10%;
+        top: 1rem;
+        bottom: 1rem;
+    }
+    .code_pic{
+        margin: .5rem;
+    }
+    .intro{
+        padding-top: .2rem;
+        width: 100%;
+        font: 300;
+        margin-bottom: 0;
+        padding: 1rem;
+        margin: 0;
+        border-left: none;
+    }
+}
+@media screen and (min-width: 640px){
+    .box:hover .front{
+        transform: rotateY(180deg);
+    }
+    .box:hover .back{
+        transform: rotateY(0deg);
+    }
+    .box{
+        left: 20%;
+        top: 20%;
+        width: 60%;
+    }
+    .front{
+        justify-content: space-around;
+    }
+}
+
+

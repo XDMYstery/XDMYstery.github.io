@@ -1,0 +1,90 @@
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: #ecf0f1;
+
+  }
+
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 45px;
+    padding: 0 45px;
+  }
+
+  .content__container:before {
+    content: '[ $';
+    position: absolute;
+    left: 0;
+  }
+
+  .content__container:after {
+    content: '_ ]';
+    position: absolute;
+    right: 0;
+  }
+
+  .content__container:after {
+    position: absolute;
+    top: 0;
+    
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+  }
+
+  .content__container:before {
+    position: absolute;
+    top: 0;
+    
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+  }
+
+  .content__container__text {
+    white-space: pre;
+    display: inline;
+    margin: 0;
+  }
+
+  @-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-o-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-moz-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  

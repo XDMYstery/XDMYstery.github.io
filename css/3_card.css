@@ -1,0 +1,85 @@
+#third{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#third .card1,.card2,.card3{
+    display: flex;
+    position: absolute;
+    width: 33.333%;
+    top: 0;
+	bottom: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.in_card1,.in_card2,.in_card3{
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    width: 50%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    animation: breathe2 2.7s alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+.in_card1{
+    background: url('../img/技术分享1.jpg') no-repeat;
+}
+.in_card2{
+    background: url('../img/技术分享2.jpg') no-repeat;
+}
+.in_card3{
+    background: url('../img/技术分享3.jpg') no-repeat 40%;
+}
+#third h1{
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(56, 77, 196), 0 0 0.2em rgb(68, 4, 4);
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+.info{    
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(56, 77, 196), 0 0 0.2em rgb(68, 4, 4);
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+@keyframes breathe2{
+	from{box-shadow:0 1px 2px rgba(255,255,255,0.1);}
+	to{ box-shadow:0 2px 50px rgba(135, 255, 255, 0.678);}
+}
+
+@media screen and (max-width: 640px){
+    .in_card1,.in_card2,.in_card3{
+
+        width: 80%;
+    }
+    .in_card1{
+        background-position: 20% 20%;
+    }
+    .in_card2{
+        background-position: 80%;
+    }
+    .in_card3{
+        background-position: 50% 20%;
+    }
+    .info{
+        width: 100%;
+    }
+}

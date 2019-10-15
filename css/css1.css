@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/bo335-rwqq2.svg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.glass {
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/bo335-rwqq2.svg');
+  background-size: cover;
+  background-position: center;
+  clip-path: inset(10em);
+  filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table1 {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 3em;
+  left: 3em;
+  height: 2em;
+  z-index: 5;
+  color: rgba(206, 188, 86, 0.644);
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  white-space: pre;
+}
+
+.glassBoard {
+  overflow: hidden;
+  top: 10em;
+  bottom: 10em;
+  left: 10em;
+  right: 10em;
+  display: block;
+  position: absolute;
+}
+
+.drop-shadow {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-shadow > span {
+    align-self: flex-end;
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-size: 4em;
+    letter-spacing: 0.75em;
+    padding-left: 0.68em;
+  }
+
+.drop-shadow:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10em;
+    height: calc(100% - 20em);
+    width: calc(100% - 20em);
+    border-top: 2px solid rgba(225,225,225, 0.2);
+    border-left: 1px solid rgba(225,225,225, 0.1);
+    border-right: 1px solid rgba(225,225,225, 0.3);
+    z-index: 2;
+    /*filter: blur(1px);*/
+  }
+
+@media (max-width: 980px) {
+  .glass {
+     clip-path: inset(5em);
+  }
+
+  .drop-shadow > span {
+    font-size: 4em;
+  }
+
+  .drop-shadow:before {
+    top: 5em;
+    width: calc(100% - 10em);
+  }
+
+  .glassBoard {
+    top: 5em;
+    bottom: 5em;
+    left: 5em;
+    right: 5em;
+    display: block;
+    position: absolute;
+    content: "";
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .drop-shadow > span {
+    font-size: 2em;
+  }
+
+  #table1 {
+    bottom: 1em;
+    left: 1em;
+  }
+
+  .glass {
+    clip-path: inset(2em);
+  }
+
+  .glassBoard {
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+  }
+
+  .drop-shadow:before {
+    top: 2em;
+    width: calc(100% - 4em);
+  }
+
+}
+
+.down_arrow{
+  position: absolute;
+  top: 90%; 
+  left: 50%;
+  transform: translate(-50%); 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid rgb(255, 255, 255);
+}
+#ar1{
+  opacity: 1;
+  animation: move2 .8s infinite;
+
+}
+#ar2{
+  opacity: 0.5;
+  animation: move1 .8s infinite;
+}
+#ar3{
+  opacity: 0.2;
+}
+@keyframes move1{
+  form{top:90%;}
+  to{top:92%;}
+}
+@keyframes move2{
+  form{top:90%;}
+  to{top:94%;}
+}

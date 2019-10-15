@@ -1,0 +1,7 @@
+{
+    "sudo_halt":"window.opener=null;window.close();",
+    "bgp":"document.getElementsByClassName('background')[0].style.backgroundImage='url(../img/bgp.png)';document.getElementsByClassName('background')[1].style.backgroundImage='url(../img/bgp.png)';",
+    "xdmy":"document.getElementsByClassName('background')[0].style.backgroundImage='url(../img/xdmy.png)';document.getElementsByClassName('background')[1].style.backgroundImage='url(../img/xdmy.png)';",
+    "sudo_su":"var l=document.createElement('style');l.innerText='.content__container:before {content: \\'[ #\\';position: absolute;left: 0;color: #ff0000;}';document.body.appendChild(l);var s=document.createElement('style');s.innerText='.content__container:after {content: \\'_ ]\\';position: absolute;right: 0;color: #ff0000;}';document.body.appendChild(s);user = 'root';creatTable('>Login account: root')",
+    "su_guest":"var l=document.createElement('style');l.innerText='.content__container:before {content: \\'[ $\\';position: absolute;left: 0;color: #16a085;}';document.body.appendChild(l);var s=document.createElement('style');s.innerText='.content__container:after {content: \\'_ ]\\';position: absolute;right: 0;color: #16a085;}';document.body.appendChild(s);user = 'guest';creatTable('>Login account: guest')"
+}
