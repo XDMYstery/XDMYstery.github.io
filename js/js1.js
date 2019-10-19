@@ -65,3 +65,5 @@ function cmd (msg) {
     // console.log(cmd)
     eval(cmd)
 }
+
+

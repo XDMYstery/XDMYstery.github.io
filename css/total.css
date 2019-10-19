@@ -539,16 +539,17 @@ body {
         align-items: center;
     
     }
+
     .box{
         align-self: center;
         min-height: 60%;
         /* perspective: 800px; 3D效果*/
         position: relative;
         transform-style:preserve-3d;
-        
+        cursor: crosshair;
     }
     
-    .front,.back{
+    .front{
         position: absolute;
         width: 100%;
         min-height: 100%;
@@ -564,21 +565,14 @@ body {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        transition: 1s;
         background: rgba(35, 99, 141, 0.5);
         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F164564,endColorstr=#7F164564);
         backface-visibility:hidden;
-    
+        -webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+        -moz-backface-visibility:hidden; 	/* Firefox */
+        -ms-backface-visibility:hidden; 	/* Internet Explorer */
     }
-    .back{
-        transform: rotateY(-180deg);
-        backface-visibility: hidden;
-        transition: 1s;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../img/xdmy.png');
-        filter: invert(100%);
-    }
+
     
     
     .code_pic{
@@ -614,6 +608,13 @@ body {
         filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F0a2030,endcolorstr=#7F0a2030);
         font-weight: 500;
     }
+    #join_us{
+      color: aliceblue;
+      position: absolute;
+      top: 85%; 
+      left: 50%;
+      transform: translate(-50%); 
+    }
     @media screen and (max-width: 640px){
     
         .front{
@@ -646,12 +647,7 @@ body {
         }
     }
     @media screen and (min-width: 640px){
-        .box:hover .front{
-            transform: rotateY(180deg);
-        }
-        .box:hover .back{
-            transform: rotateY(0deg);
-        }
+
         .box{
             left: 20%;
             top: 20%;

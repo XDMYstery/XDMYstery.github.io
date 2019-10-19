@@ -27,15 +27,52 @@
 
 	//methods
     $.fn.fullpage.setAllowScrolling(true);
+    //跳转
+    $('#fifth').hover(function(){
+    window.open("https://bbs.xdmy.club/",'_self');
+    })
 });
 
 $(window).load(function(){
 	$('#loading').delay(500).fadeOut(500);
+    if(isEdge()||isIE()){
+        alert("ie有点旧啦，建议更换浏览器哦ヾ(•ω•`)o");
+        //↓暴躁.jpg↓
+        // window.open("https://www.google.cn/intl/zh-CN/chrome/",'_self');
+    }
+    else{
+        $("head").append("<link>");
+        var toolbarCss = $("head").children(":last");
+        toolbarCss.attr({
+        rel: "stylesheet",
+        type: "text/css",
+        href:  "css/chrome.css"
 });
+    }
+});
+
+function isEdge() {
+    if (navigator.userAgent.indexOf("Edge") > -1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function isIE() {
+    if (!!window.ActiveXObject || "ActiveXObject" in window) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 </script>
 <script type="text/javascript" src="js/fullpage.js"></script>
 <style>
+
 #loading
 {
 	position:fixed;
@@ -52,6 +89,7 @@ $(window).load(function(){
 <body class="background">
     <div id="fullpage">
                 <div class="section" id="first">
+                    
                         <div class="section" id="loading"></div>
                         <div class="drop-shadow">
                                 <div class="glassBoard">
@@ -190,9 +228,14 @@ $(window).load(function(){
                         </div>
                         <div class="back"></div>
                     </div>
+                                <div class="down_arrow" id="ar1"></div>
+                                <div class="down_arrow" id="ar2"></div>
+                                <div class="down_arrow" id="ar3"></div>
+                                <h1 id="join_us">加入&nbsp;&nbsp;&nbsp;我们</h1>
+                </div>
 
-                        
-                    
+                <div class="section" id="fifth" style="background-color: white;">
+
                 </div>
         </div>
 
